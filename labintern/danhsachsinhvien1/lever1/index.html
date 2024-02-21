@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sachs sinh viên</title>
+    <style>
+        table , td , th {
+            border:2px solid black ;
+    
+        }
+    </style>
+</head>
+<body>
+    <h1>Danh sách sinh viên</h1>
+    <form action="">
+         <label for="keyword">Từ khóa</label>
+    <input type="text" name="txtTuKhoa" id="" placeholder="từ khóa cânf timd kiếm">
+    <button>tim kiếm</button>
+    </form>
+   
+    <br>
+    <form action="">
+        <table style ="width:100%">
+            <tr>
+                <th></th>
+                <th> mã sinh viên</th>
+                <th> tên sinh viên</th>
+                <th> ngày sinh</th>
+                <th> giới tính</th>
+                <th> khoa</th>
+                <th> thao tác </th>
+            </tr>
+            <tr>
+            <td> <input type="checkbox" name="check" id=""></td>
+            <td> 20211344</td>
+            <td> ngô ngọc huy</td>
+            <td> 05/08/2003</td>
+            <td> nam</td>
+            <td> cntt</td>
+            <td> <a href="#"> sửa</a> <a href="#"> xóa</a></td>
+            </tr>
+            <tr>
+                <td> <input type="checkbox" name="" id=""></td>
+                <td>20211345</td>
+                <td> ngô ngọc huy</td>
+                <td> 05/08/2003</td>
+                <td> nam</td>
+                <td> cntt</td>
+                <td> <a href="#"> sửa</a> <a href="#"> xóa</a></td>
+            </tr>
+        </table>
+    </form>
+    <br>
+    <div>
+<button>Thêm mới </button>
+<button> Cập nhật</button>
+<button> Xóa</button>
+</div>
+<br>
+<form action="import">
+    <label for="msv "> msv <span style="color:red">*</span></label><br>
+    <input type="text" name="txtMSV" id="" placeholder="nhâp msv"> <br>
+    <label for="msv "> tên sinh viên <span style="color:red">*</span></label><br>
+    <input type="text" name="txttensv" id=""> <br>
+    <label for="msv "> ngày sinh</label><br>
+    <input type="text" name="txtngaysinh" id=""><br>
+    <label for="msv "> giới tính </label><br>
+    <label for=""><input type="radio" name="rdbgioitinh" id=""> Nam</label>
+    <label for=""><input type="radio" name="rdbgioitinh" id=""> Nữ</label> <br>
+    <label for="msv "> khoa <span style="color:red">*</span></label>
+<select name="drpkhoa" id="">
+    <option value=""> cntt</option>
+    <option value=""> an toàn thông tin</option>
+</select>
+</form>
+</body>
+</html>

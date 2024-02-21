@@ -1,0 +1,35 @@
+.timkiem{
+    border:1px solid red;
+    padding:20px;
+    
+}
+.timkiem label{
+    
+        background-color: white;    
+    
+}
+.timkiem button{
+    background-color: red;
+    color:white;
+}
+.kq{
+    border:1px solid red;
+    padding:20px;  
+}
+th{
+    background-color: red;
+    color:white;
+}
+.import{
+    border:1px solid red;
+    padding:20px; 
+}
+.import button {
+    background-color: red;
+    color:white;
+}
+.import label{
+    
+    background-color: white;    
+
+}

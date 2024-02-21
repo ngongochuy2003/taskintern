@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Danh sách sinh viên</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        table , td , th {
+            border:2px solid black ;
+    
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Danh sách sinh viên</h1>
+    <form action="" class="timkiem">
+         <label for="keyword">Từ khóa</label>
+    <input type="text" name="txtTuKhoa" id="timkiemsv" placeholder="từ khóa cânf timd kiếm">
+    <button>tim kiếm</button>
+    </form>
+   
+    <br>
+    <form action="" class="kq">
+        
+            <table id="dataList" style ="width:100%">
+                <thead>
+                    <tr>
+                        <th>stt</th>
+                        <th>msv</th>
+                        <th>Tên sv</th>
+                        <th>Ngày sinh</th>
+                        <th>giưới tính</th>
+                        <th>Khoa</th>
+                        <th>Thao tác</th>
+                        <th onchange="chooseAllSV()"><input type="checkbox" id="chooseAllSV"></th>
+                    </tr>
+                </thead>
+                <tbody id="listData" onchange="refreshIndexTable()">
+                </tbody>
+            </table>
+        
+    </form>
+    <br>
+    <form action="" class="import">
+            <div id="btnData">
+                <button type="button" onclick="btnAddOneSinhVien()">Thêm mới</button>
+                <button type="button" onclick="btnUpdateOneSinhVien()">Cập nhật</button>
+                <button type="button" onclick="deleteManySV()">Xóa</button>
+            </div>
+            <div id="inputDataList">
+                <label for="txtMaSV">Mã SV <span class="requireData">*</span></label>
+                <input type="text" id="txtMaSV" required>
+                <br><label for="txtTenSV">Tên sinh viên<span class="requireData">*</span></label>
+                <input type="text" id="txtTenSV" required>
+                <br><label for="txtNgaySinh">Ngày sinh</label>
+                <input type="text" id="txtNgaySinh" required>
+
+                <br><label>Giới tính:</label>
+                <input type="radio" name="rdbGioiTinh" value="Nam" id="rdbNam" checked>
+                <label for="rdbNam">Nam</label>
+                <input type="radio" name="rdbGioiTinh" value="Nữ" id="rdbNu">
+                <label for="rdbNu">Nữ</label>
+                <br><label for="drpKhoa">Khoa</label>
+                <select id="drpKhoa" required>
+                </select>
+            </div>
+        </form>
+<script src="main.js"></script>
+</body>
+</html>
